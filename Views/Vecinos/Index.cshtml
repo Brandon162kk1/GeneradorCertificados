@@ -2,8 +2,71 @@
 @{
     ViewData["Title"] = "Admin";
     Layout = "_Administrador";
+    var count = 1;
 }
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <main>
     <center><h1>Lista de Usuarios Inscritos en Eventos</h1></center><br>
-    <a class="btn btn-primary" asp-controller="Usuario" asp-action="Create">Agregar Usuario</a>
+    <a class="btn btn-primary" asp-controller="Vecinos" asp-action="Create">Agregar Vecino</a>
+    <table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">
+                №
+            </th>
+            <th scope="col">
+                Dni
+            </th>
+            <th scope="col">
+                Nombres
+            </th>
+            <th scope="col">
+                Apellidos
+            </th>
+            <th scope="col">
+                Correo Electronico
+            </th>
+            <th>
+                Celular
+            </th>
+            <th>
+                Eventos
+            </th>
+            <th>
+                PDF
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+           <th scope="row">
+                @count
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dni)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombres)
+            </td>                
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellidos);
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Correo);
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Celular);
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Evento);
+            </td>
+            <td>
+                Otro
+            </td>
+        </tr>
+        count++;
+}
+    </tbody>
+</table>
 </main>
