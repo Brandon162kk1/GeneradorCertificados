@@ -9,11 +9,11 @@ using Microsoft.Extensions.Logging;
 namespace Software2.Controllers
 {
 
-    public class UsuarioController : Controller
+    public class VecinosController : Controller
     {
-        private readonly ILogger<UsuarioController> _logger;
+        private readonly ILogger<VecinosController> _logger;
 
-        public UsuarioController(ILogger<UsuarioController> logger)
+        public VecinosController(ILogger<VecinosController> logger)
         {
             _logger = logger;
         }
