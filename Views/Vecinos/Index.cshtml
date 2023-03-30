@@ -6,31 +6,36 @@
 }
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <main>
-    <center><h1>Lista de Usuarios Inscritos en Eventos</h1></center><br>
-    <a class="btn btn-primary" asp-controller="Vecinos" asp-action="Create">Agregar Vecino</a>
-    <table class="table table-hover">
-    <thead class="thead-dark">
+    <center><h4>Lista de Usuarios Inscritos en Eventos</h4></center><br>
+    <form class="row g-3"><!--nofuncioan-->
+        <p class="col-auto">Buscar por :</p>
+        <div class="col-auto">
+            <input type="email" class="form-control" name="usuario" placeholder="Dni">
+        </div>
+        <div class="col-auto">
+            <input type="email" class="form-control" name="usuario" placeholder="Evento">
+        </div>
+    </form><br>
+    <table class="table table-bordered table-hover">
+    <thead class="table-dark">
         <tr>
             <th scope="col">
                 №
             </th>
             <th scope="col">
-                Dni
+                DNI
             </th>
             <th scope="col">
-                Nombres
-            </th>
-            <th scope="col">
-                Apellidos
-            </th>
-            <th scope="col">
-                Correo Electronico
+                NOMBRES y APELLIDOS
             </th>
             <th>
-                Celular
+                CORREO
             </th>
             <th>
-                Eventos
+                CELULAR
+            </th>
+            <th>
+                EVENTO
             </th>
             <th>
                 PDF
@@ -47,22 +52,23 @@
                 @Html.DisplayFor(modelItem => item.Dni)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Nombres)
+                @Html.DisplayFor(modelItem => item.Nombres) @Html.DisplayFor(modelItem => item.Apellidos)
             </td>                
             <td>
-                @Html.DisplayFor(modelItem => item.Apellidos);
+                @Html.DisplayFor(modelItem => item.Correo)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Correo);
+                @Html.DisplayFor(modelItem => item.Celular)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Celular);
+                @Html.DisplayFor(modelItem => item.Evento)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Evento);
-            </td>
-            <td>
-                Otro
+                <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+                </button>
+               </div>
             </td>
         </tr>
         count++;
