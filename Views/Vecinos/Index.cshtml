@@ -1,3 +1,4 @@
+@model IEnumerable<Software2.Models.Vecinos>
 @{
     ViewData["Title"] = "Admin";
     Layout = "_Administrador";
@@ -5,51 +6,4 @@
 <main>
     <center><h1>Lista de Usuarios Inscritos en Eventos</h1></center><br>
     <a class="btn btn-primary" asp-controller="Usuario" asp-action="Create">Agregar Usuario</a>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th> 
-                DNI 
-            </th>
-            <th>
-                NOMBRES
-            </th>
-            <th>
-                APELLIDOS
-            </th>
-            <th>
-                EVENTOS
-            </th>
-            <th>
-               CERTIFICADO
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                72534407
-            </td>
-            <td>
-                BRANDON
-            </td>
-            <td>
-                RDORIGUEZ ROCHA
-            </td>
-            <td>
-                FUTBOL
-            </td>
-            <td>
-                VER PDF
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="">Editar</a> |
-                <a asp-action="Details" asp-route-id="">Detalles</a> |
-                <a asp-action="Delete" asp-route-id="">Eliminar</a>
-            </td>
-        </tr>
-    </tbody>
-</table>
 </main>
