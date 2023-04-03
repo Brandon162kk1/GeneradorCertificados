@@ -1,8 +1,63 @@
 @model Software2.Models.Vecinos
 @{
     ViewData["Title"] = "Admin";
-    Layout = "_Administrador";
+    Layout = "_Administrador";  
 }
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <main>
-    
+    <a class="btn btn-outline-danger" asp-action="Index">Regresar</a>
+<br><br>
+      <div class="row">
+      <div class="col-lg-7 mx-auto">
+        <div  class="card" style="border-radius: 20px; padding: 1rem 1rem; height: 330px;">
+          <div class="card-body">
+            <form asp-action="Create" class="row g-3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+  <div class="col-md-6">
+    <label class="control-label">Nombres</label>
+                <input asp-for="Nombres" class="form-control" />
+                <span asp-validation-for="Nombres" class="text-danger"></span>
+  </div>
+  <div class="col-md-6">
+    <label class="control-label">Apellidos</label>
+                <input asp-for="Apellidos"class="form-control" />
+                <span asp-validation-for="Apellidos" class="text-danger"></span>
+  </div>
+  <div class="col-md-4">
+    <label class="control-label">Dni</label>
+                <input asp-for="Dni" class="form-control" />
+                <span asp-validation-for="Dni" class="text-danger"></span>
+  </div>
+  <div class="col-md-4">
+    <label class="control-label">Celular</label>
+                <input asp-for="Celular" class="form-control" />
+                <span asp-validation-for="Celular" class="text-danger"></span>
+  </div>
+  <div class="col-md-6">
+    <label class="control-label">Correo</label>
+                <input asp-for="Correo" type="email" class="form-control" />
+                <span asp-validation-for="Correo" class="text-danger"></span>
+  </div>
+  <div class="col-md-4">
+    <label class="control-label">Evento</label>
+      <select asp-for="Evento" class="form-control" >
+        <option></option>
+        <option value="1">Ajedrez</option><!-- ejemplos-->
+        <option value="2">Voley</option>
+        <option value="3">Natacion</option>
+    </select>
+                <span asp-validation-for="Evento" class="text-danger"></span>
+  </div>
+  <div class="col-md-6">
+        <center><input type="submit" value="Inscribir Vecino" class="btn btn-primary"/></center>
+   </div>
+</form>
+          </div>
+        </div>
+      </div> 
+      </div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
 </main>

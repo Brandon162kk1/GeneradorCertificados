@@ -23,14 +23,32 @@ namespace Software2.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? searchString)
         {
-            return View(await _context.DataVecinos.ToListAsync());
+            var vecinos = from o in _context.DataVecinos select o;
+            if(!String.IsNullOrEmpty(searchString)){
+                vecinos = vecinos.Where(s => s.Dni.Contains(searchString));
+            }
+
+            return View(await vecinos.ToListAsync());
         }
         public IActionResult Create()
         {
             return View();
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Id,Nombres,Apellidos,Dni,Celular,Correo,Evento")] Vecinos vecino)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(vecino);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(vecino);
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

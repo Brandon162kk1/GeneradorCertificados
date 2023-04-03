@@ -7,15 +7,12 @@
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <main>
     <center><h4>Lista de Usuarios Inscritos en Eventos</h4></center><br>
-    <form class="row g-3"><!--nofuncioan-->
-        <p class="col-auto">Buscar por :</p>
-        <div class="col-auto">
-            <input type="email" class="form-control" name="usuario" placeholder="Dni">
+    <form action="/Vecinos" method="post">
+        <div class="form-outline">
+            <input type="text" id="searchString" class="form-control" placeholder="Buscar" aria-label="searchString" name="searchString"/>
         </div>
-        <div class="col-auto">
-            <input type="email" class="form-control" name="usuario" placeholder="Evento">
-        </div>
-    </form><br>
+    </form>
+    <br>
     <table class="table table-bordered table-hover">
     <thead class="table-dark">
         <tr>
@@ -28,16 +25,16 @@
             <th scope="col">
                 NOMBRES y APELLIDOS
             </th>
-            <th>
+            <th scope="col">
                 CORREO
             </th>
-            <th>
+            <th scope="col">
                 CELULAR
             </th>
-            <th>
+            <th scope="col">
                 EVENTO
             </th>
-            <th>
+            <th scope="col">
                 PDF
             </th>
         </tr>
@@ -53,7 +50,7 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Nombres) @Html.DisplayFor(modelItem => item.Apellidos)
-            </td>                
+            </td>               
             <td>
                 @Html.DisplayFor(modelItem => item.Correo)
             </td>
@@ -65,9 +62,7 @@
             </td>
             <td>
                 <div class="btn-group" role="group">
-                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-                </button>
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
                </div>
             </td>
         </tr>
