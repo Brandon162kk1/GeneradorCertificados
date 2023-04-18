@@ -52,6 +52,24 @@ namespace Software2.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "t_vecinos",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Nombre = table.Column<string>(type: "text", nullable: true),
+                    Apellidos = table.Column<string>(type: "text", nullable: true),
+                    Dni = table.Column<string>(type: "text", nullable: true),
+                    Celular = table.Column<string>(type: "text", nullable: true),
+                    Correo = table.Column<string>(type: "text", nullable: true),
+                    Evento = table.Column<string>(type: "text", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_t_vecinos", x => x.id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
@@ -212,6 +230,9 @@ namespace Software2.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "t_vecinos");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
