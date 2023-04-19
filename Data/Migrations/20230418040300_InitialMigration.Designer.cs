@@ -12,8 +12,8 @@ using Software2.Data;
 namespace Software2.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230330203829_VecinosMigration")]
-    partial class VecinosMigration
+    [Migration("20230418040300_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
