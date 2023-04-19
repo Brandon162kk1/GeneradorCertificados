@@ -4,12 +4,13 @@
     Layout = "_Administrador";
     var count = 1;
 }
+
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <main>
     <center><h4>Lista de Usuarios Inscritos en Eventos</h4></center><br>
     <form action="/Vecinos" method="post">
-        <div class="form-outline">
-            <input type="text" id="searchString" class="form-control" placeholder="Buscar" aria-label="searchString" name="searchString"/>
+        <div class="col-lg-5 mx-auto">
+            <input type="text" id="searchString" class="form-control" placeholder="Buscar por Dni" name="searchString"/>
         </div>
     </form>
     <br>
@@ -61,9 +62,7 @@
                 @Html.DisplayFor(modelItem => item.Evento)
             </td>
             <td>
-                <div class="btn-group" role="group">
-                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
-               </div>
+            
             </td>
         </tr>
         count++;

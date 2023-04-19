@@ -29,7 +29,6 @@ namespace Software2.Controllers
             if(!String.IsNullOrEmpty(searchString)){
                 vecinos = vecinos.Where(s => s.Dni.Contains(searchString));
             }
-
             return View(await vecinos.ToListAsync());
         }
         public IActionResult Create()
