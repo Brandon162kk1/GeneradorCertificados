@@ -52,8 +52,6 @@ namespace Software2.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-<<<<<<<< HEAD:Data/Migrations/20230418040300_InitialMigration.cs
-========
                 name: "t_eventos",
                 columns: table => new
                 {
@@ -70,7 +68,6 @@ namespace Software2.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
->>>>>>>> e033c06a4936e3c28c2095e6edec0b353d0b0f5f:Data/Migrations/20230421162708_InitialMigration.cs
                 name: "t_vecinos",
                 columns: table => new
                 {
@@ -251,12 +248,9 @@ namespace Software2.Data.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-<<<<<<<< HEAD:Data/Migrations/20230418040300_InitialMigration.cs
-========
                 name: "t_eventos");
 
             migrationBuilder.DropTable(
->>>>>>>> e033c06a4936e3c28c2095e6edec0b353d0b0f5f:Data/Migrations/20230421162708_InitialMigration.cs
                 name: "t_vecinos");
 
             migrationBuilder.DropTable(

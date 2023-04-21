@@ -12,13 +12,8 @@ using Software2.Data;
 namespace Software2.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-<<<<<<<< HEAD:Data/Migrations/20230418040300_InitialMigration.Designer.cs
-    [Migration("20230418040300_InitialMigration")]
-    partial class InitialMigration
-========
-    [Migration("20230421162811_VecinosMigration")]
-    partial class VecinosMigration
->>>>>>>> e033c06a4936e3c28c2095e6edec0b353d0b0f5f:Data/Migrations/20230421162811_VecinosMigration.Designer.cs
+    [Migration("20230421164702_EventosMigration")]
+    partial class EventosMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

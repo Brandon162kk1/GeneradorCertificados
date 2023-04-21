@@ -12,7 +12,7 @@ using Software2.Data;
 namespace Software2.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230421162708_InitialMigration")]
+    [Migration("20230421164542_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />

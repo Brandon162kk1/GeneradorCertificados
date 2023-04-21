@@ -10772,19 +10772,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\benji\\.nuget\\packages\\": {}
+    "C:\\Users\\Asus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\benji\\Desktop\\Software II\\Nueva carpeta\\GeneradorCertificados\\Software2.csproj",
+      "projectUniqueName": "C:\\Software2\\Software2.csproj",
       "projectName": "Software2",
-      "projectPath": "C:\\Users\\benji\\Desktop\\Software II\\Nueva carpeta\\GeneradorCertificados\\Software2.csproj",
-      "packagesPath": "C:\\Users\\benji\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\benji\\Desktop\\Software II\\Nueva carpeta\\GeneradorCertificados\\obj\\",
+      "projectPath": "C:\\Software2\\Software2.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Software2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\benji\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
