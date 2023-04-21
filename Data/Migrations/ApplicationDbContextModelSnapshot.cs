@@ -222,6 +222,36 @@ namespace Software2.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Software2.Models.Eventos", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CodEvento")
+                        .HasColumnType("text")
+                        .HasColumnName("codEvento");
+
+                    b.Property<string>("Docente")
+                        .HasColumnType("text")
+                        .HasColumnName("Docente");
+
+                    b.Property<string>("Horario")
+                        .HasColumnType("text")
+                        .HasColumnName("Horario");
+
+                    b.Property<string>("NombreEvento")
+                        .HasColumnType("text")
+                        .HasColumnName("NombreEvento");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("t_eventos");
+                });
+
             modelBuilder.Entity("Software2.Models.Vecinos", b =>
                 {
                     b.Property<int>("Id")
