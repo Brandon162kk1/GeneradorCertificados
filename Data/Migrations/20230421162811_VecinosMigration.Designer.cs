@@ -12,8 +12,8 @@ using Software2.Data;
 namespace Software2.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230324065534_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20230421162811_VecinosMigration")]
+    partial class VecinosMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -223,6 +223,74 @@ namespace Software2.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("Software2.Models.Eventos", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CodEvento")
+                        .HasColumnType("text")
+                        .HasColumnName("codEvento");
+
+                    b.Property<string>("Docente")
+                        .HasColumnType("text")
+                        .HasColumnName("Docente");
+
+                    b.Property<string>("Horario")
+                        .HasColumnType("text")
+                        .HasColumnName("Horario");
+
+                    b.Property<string>("NombreEvento")
+                        .HasColumnType("text")
+                        .HasColumnName("NombreEvento");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("t_eventos");
+                });
+
+            modelBuilder.Entity("Software2.Models.Vecinos", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Apellidos")
+                        .HasColumnType("text")
+                        .HasColumnName("Apellidos");
+
+                    b.Property<string>("Celular")
+                        .HasColumnType("text")
+                        .HasColumnName("Celular");
+
+                    b.Property<string>("Correo")
+                        .HasColumnType("text")
+                        .HasColumnName("Correo");
+
+                    b.Property<string>("Dni")
+                        .HasColumnType("text")
+                        .HasColumnName("Dni");
+
+                    b.Property<string>("Evento")
+                        .HasColumnType("text")
+                        .HasColumnName("Evento");
+
+                    b.Property<string>("Nombres")
+                        .HasColumnType("text")
+                        .HasColumnName("Nombre");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("t_vecinos");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
