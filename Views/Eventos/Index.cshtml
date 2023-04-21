@@ -3,9 +3,39 @@
     ViewData["Title"] = "Admin";
     Layout = "_Administrador";
 }
-
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <main>
-      <div>
-            <p>Bienvenido a la sección de Eventos</p>
+     <div class="container">
+    <div class="row">
+      <div class="col">
+        <div id="products" class="mb-3">
+          <div class="row">
+            @foreach (var item in Model) {
+            <div  class="col-sm-4">
+              <div id="carta" class="card mb-3">
+                <div class="card-body">
+                  <div class="card-img-actions">
+                    
+                  </div>
+                </div>
+                <div class="card-body">
+                  <center>
+                  <h1 class="card-title">@Html.DisplayFor(modelItem => item.NombreEvento)</h1>
+                  <p class="card-text">Codigo Evento: @Html.DisplayFor(modelItem => item.CodEvento)</p>
+                  <p class="card-text">Horario: @Html.DisplayFor(modelItem => item.Horario)</p>
+                  <p>
+                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>Modificar</button>
+                    <button type="button" class="btn btn-outline-danger" onclick="agregacion();" asp-action="Add" asp-route-id="@item.Id"><span class="glyphicon glyphicon-pencil"></span>Suspender</button>
+                    <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-remove"></span>Ver Plantilla</button>
+                  </p>
+                  </center>
+                </div>
+              </div>
+            </div>
+            }
+         </div>
         </div>
+      </div>
+    </div>
+  </div>
 </main>

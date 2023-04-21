@@ -8,7 +8,6 @@ using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using Software2.Data;
 using Software2.Models;
-
 namespace Software2.Controllers
 {
 
