@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EqWyyWblyRMOp92gye85F8rGRVPGXt81ijLoudICZEg=",
+  "Hash": "LzaIM/54PFXqYdLI4DWKhwAn3H9ry+zuBkvRURiIEx4=",
   "Source": "Software2",
   "BasePath": "_content/Software2",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Software2\\wwwroot\\Images\\admin.png",
+      "SourceId": "Software2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Software2\\wwwroot\\",
+      "BasePath": "_content/Software2",
+      "RelativePath": "Images/admin.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\admin.png"
     },
     {
       "Identity": "C:\\Software2\\wwwroot\\Images\\molina.png",

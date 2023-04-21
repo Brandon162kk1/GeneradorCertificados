@@ -4,7 +4,6 @@
     Layout = "_Administrador";
     var count = 1;
 }
-
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <main>
     <center><h4>Lista de Usuarios Inscritos en Eventos</h4></center><br>
@@ -35,9 +34,6 @@
             <th scope="col">
                 EVENTO
             </th>
-            <th scope="col">
-                PDF
-            </th>
         </tr>
     </thead>
     <tbody>
@@ -60,9 +56,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Evento)
-            </td>
-            <td>
-            
             </td>
         </tr>
         count++;
