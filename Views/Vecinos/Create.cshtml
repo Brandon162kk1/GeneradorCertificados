@@ -33,23 +33,13 @@
                 <input asp-for="Celular" class="form-control" />
                 <span asp-validation-for="Celular" class="text-danger"></span>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-10">
     <label class="control-label">Correo</label>
                 <input asp-for="Correo" type="email" class="form-control" />
                 <span asp-validation-for="Correo" class="text-danger"></span>
   </div>
-  <div class="col-md-4">
-    <label class="control-label">Evento</label>
-      <select asp-for="Evento" class="form-control" >
-        <option></option>
-        <option value="1">Ajedrez</option><!-- ejemplos-->
-        <option value="2">Voley</option>
-        <option value="3">Natacion</option>
-    </select>
-                <span asp-validation-for="Evento" class="text-danger"></span>
-  </div>
   <div class="col-md-6">
-        <center><input type="submit" value="Inscribir Vecino" class="btn btn-primary"/></center>
+        <input type="submit" value="Inscribir Vecino" class="btn btn-primary"/>
    </div>
 </form>
           </div>

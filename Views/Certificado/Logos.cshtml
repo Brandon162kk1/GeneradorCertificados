@@ -6,6 +6,7 @@
 }
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <main>
+    <center><h2>Logos Registradas</h2></center>
 <a class="btn btn-outline-danger" asp-action="Index">Regresar</a>
 <a class="btn btn-outline-danger" asp-action="CrearLogo">Crear Logos</a>
 <br><br>
@@ -22,7 +23,7 @@
                 NOMBRE INSTITUCION
             </th>
             <th scope="col">
-                ---
+                OPCIONES
             </th>
         </tr>
     </thead>
@@ -44,7 +45,8 @@
                @Html.DisplayFor(modelItem => item.NombreInsti)
             </td>
             <td>
-               ---
+               <a asp-action="" asp-route-id="@item.Id"><img src="/Images/editar.png" width="40px" heigh="40px"></a>
+               <a asp-action="" asp-route-id="@item.Id" onclick="return confirm('¿Esta seguro de eliminar el logo?')"><img src="/Images/eliminar.png" width="40px" heigh="40px"></a>
             </td>               
         </tr>
         count++;

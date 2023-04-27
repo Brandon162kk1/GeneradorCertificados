@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LzaIM/54PFXqYdLI4DWKhwAn3H9ry+zuBkvRURiIEx4=",
+  "Hash": "IUM3mPQDUsPKNNlU0boYC6iijGs040WmyetjK48Y2jU=",
   "Source": "Software2",
   "BasePath": "_content/Software2",
   "Mode": "Default",
@@ -117,6 +117,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\admin.png"
+    },
+    {
+      "Identity": "C:\\Software2\\wwwroot\\Images\\editar.png",
+      "SourceId": "Software2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Software2\\wwwroot\\",
+      "BasePath": "_content/Software2",
+      "RelativePath": "Images/editar.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\editar.png"
+    },
+    {
+      "Identity": "C:\\Software2\\wwwroot\\Images\\eliminar.png",
+      "SourceId": "Software2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Software2\\wwwroot\\",
+      "BasePath": "_content/Software2",
+      "RelativePath": "Images/eliminar.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\eliminar.png"
     },
     {
       "Identity": "C:\\Software2\\wwwroot\\Images\\molina.png",
