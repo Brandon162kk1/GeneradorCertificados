@@ -4,7 +4,22 @@
 }
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <main>
-      <div>
-            <p>Bienvenido a la sección de Certificados</p>
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container">
+        <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-8">
+          <center><h1>¿QUÉ DESEAS REALIZAR?</h1></center>
+          <br>
+        <div class="section-title">
+        <a class="nav-link" asp-controller="Pedido" asp-action="BuscarPedidos"><center><button type="submit" class="btn btn-primary">SUBIR LOGOS</button></center></a>
+        <br>
+        <a class="nav-link" asp-controller="Pedido" asp-action="BuscarPedidos"><center><button type="submit" class="btn btn-primary">SUBIR FIRMAS</button></center></a>
+        <br>
+        <a class="nav-link" asp-controller="Pedido" asp-action="ListarPedidos"><center><button type="submit" class="btn btn-primary">DISEÑAR CERTIFICADO</button></center></a>
         </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    </section>
 </main>
