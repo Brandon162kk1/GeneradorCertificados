@@ -1,0 +1,33 @@
+@model Software2.Models.Logos
+@{
+    ViewData["Title"] = "Admin";
+    Layout = "_Administrador";  
+}
+<main>
+<a class="btn btn-outline-danger" asp-action="Logos">Regresar</a>
+<br>
+<div class="row">
+      <div class="col-lg-7 mx-auto">
+        <div  class="card" style="border-radius: 20px; padding: 1rem 1rem; height: 330px;">
+          <div class="card-body">
+            <form asp-action="CrearLogo" class="row g-3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+  <div class="col-md-6">
+    <label class="control-label">Nombre de la Institución</label>
+                <input asp-for="NombreInsti" class="form-control" />
+                <span asp-validation-for="NombreInsti" class="text-danger"></span>
+  </div>
+  <div class="col-12">
+    <label class="control-label">Imagen</label>
+                <input asp-for="ImageName" type="file" class="form-control" />
+                <span asp-validation-for="ImageName" class="text-danger"></span>
+  </div>
+  <div class="col-md-6">
+        <input type="submit" value="Guardar Logo" class="btn btn-primary" />
+   </div>
+</form>
+          </div>
+        </div>
+      </div> 
+      </div>
+</main>

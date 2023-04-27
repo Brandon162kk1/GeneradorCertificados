@@ -44,6 +44,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGFuZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Software2/Views/Certificado/CrearFirma.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cQ3JlYXJGaXJtYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Software2/Views/Certificado/CrearLogo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cQ3JlYXJMb2dvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Software2/Views/Certificado/Firmas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cRmlybWFzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

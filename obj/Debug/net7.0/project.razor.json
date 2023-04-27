@@ -18660,6 +18660,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Software2\\Views\\Certificado\\CrearLogo.cshtml",
+      "TargetPath": "Views\\Certificado\\CrearLogo.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Software2\\Views\\Admin\\Panel.cshtml",
       "TargetPath": "Views\\Admin\\Panel.cshtml",
       "FileKind": "mvc"
@@ -18672,6 +18677,11 @@
     {
       "FilePath": "c:\\Software2\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Software2\\Views\\Certificado\\CrearFirma.cshtml",
+      "TargetPath": "Views\\Certificado\\CrearFirma.cshtml",
       "FileKind": "mvc"
     },
     {

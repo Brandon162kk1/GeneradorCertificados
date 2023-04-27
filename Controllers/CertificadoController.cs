@@ -35,6 +35,38 @@ namespace Software2.Controllers
         {
             return View(_context.DataFirmas);
         }
+        public IActionResult CrearLogo()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+         public async Task<IActionResult> CrearLogo([Bind("Id,NombreInsti,ImageName")] Logos logos)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(logos);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Logos));
+            }
+            return View(logos);
+        }
+        public IActionResult CrearFirma()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+         public async Task<IActionResult> CrearFirma([Bind("Id,NombreFirma,ImageNameFir")] Firmas firmas)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(firmas);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Firmas));
+            }
+            return View(firmas);
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

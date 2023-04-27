@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <main>
     <a class="btn btn-outline-danger" asp-action="Index">Regresar</a>
+    <a class="btn btn-outline-danger" asp-action="CrearFirma">Crear Firmas</a>
 <br><br>
   <table class="table table-bordered table-hover">
     <thead class="table-dark">
@@ -20,6 +21,9 @@
             <th scope="col">
                 FIRMA DEL AUTOR
             </th>
+            <th scope="col">
+                ---
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -31,13 +35,16 @@
             <td>
               <div class="card-body">
                   <div class="card-img-actions">
-                    <center><img class="img-responsive" width="150" height="200"
+                    <center><img class="img-responsive" width="70" height="70"
                        src="/Images/@item.ImageNameFir" alt="@item.ImageNameFir"  /></center>
                   </div>
                 </div>
             </td>
             <td>
                @Html.DisplayFor(modelItem => item.NombreFirma)
+            </td>
+            <td>
+               ---
             </td>               
         </tr>
         count++;
