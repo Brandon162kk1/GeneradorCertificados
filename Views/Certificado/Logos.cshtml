@@ -2,44 +2,44 @@
 @{
     ViewData["Title"] = "Admin";
     Layout = "_Administrador";
+    var count = 1;
 }
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <main>
-     <div class="container">
-    <div class="row">
-      <div class="col">
-        <div id="products" class="mb-3">
-          <div class="row">
-            @foreach (var item in Model) {
-            <div  class="col-sm-4">
-              <div id="carta" class="card mb-3">
-                <div class="card-body">
-                  <div class="card-img-actions">
-                    
-                  </div>
-                </div>
-                <div class="card-body">
-                  <center>
-                  <h1 class="card-title">@Html.DisplayFor(modelItem => item.NombreInsti)</h1>
-                  <div class="card-body">
+  <table class="table table-bordered table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">
+                №
+            </th>
+            <th scope="col">
+                IMAGEN
+            </th>
+            <th scope="col">
+                NOMBRE INSTITUCION
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+           <th scope="row">
+                @count
+            </th>
+            <td>
+              <div class="card-body">
                   <div class="card-img-actions">
                     <center><img class="img-responsive" width="150" height="200"
                        src="/Images/@item.ImageName" alt="@item.ImageName"  /></center>
                   </div>
                 </div>
-                  <p>
-                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>Modificar</button>
-                    <button type="button" class="btn btn-outline-danger" onclick="agregacion();" asp-action="Add" asp-route-id="@item.Id"><span class="glyphicon glyphicon-pencil"></span>Suspender</button>
-                    <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-remove"></span>Ver Plantilla</button>
-                  </p>
-                  </center>
-                </div>
-              </div>
-            </div>
-            }
-         </div>
-        </div>
-      </div>
-    </div>
-  </div>
+            </td>
+            <td>
+               @Html.DisplayFor(modelItem => item.NombreInsti)
+            </td>               
+        </tr>
+        count++;
+}
+    </tbody>
+</table>              
 </main>
