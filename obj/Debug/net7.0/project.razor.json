@@ -18715,6 +18715,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Software2\\Views\\Certificado\\Firmas.cshtml",
+      "TargetPath": "Views\\Certificado\\Firmas.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Software2\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"

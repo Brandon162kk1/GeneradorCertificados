@@ -1,4 +1,4 @@
-@model IEnumerable<Software2.Models.Logos>
+@model IEnumerable<Software2.Models.Firmas>
 @{
     ViewData["Title"] = "Admin";
     Layout = "_Administrador";
@@ -6,7 +6,7 @@
 }
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <main>
-<a class="btn btn-outline-danger" asp-action="Index">Regresar</a>
+    <a class="btn btn-outline-danger" asp-action="Index">Regresar</a>
 <br><br>
   <table class="table table-bordered table-hover">
     <thead class="table-dark">
@@ -18,7 +18,7 @@
                 IMAGEN
             </th>
             <th scope="col">
-                NOMBRE INSTITUCION
+                FIRMA DEL AUTOR
             </th>
         </tr>
     </thead>
@@ -32,12 +32,12 @@
               <div class="card-body">
                   <div class="card-img-actions">
                     <center><img class="img-responsive" width="150" height="200"
-                       src="/Images/@item.ImageName" alt="@item.ImageName"  /></center>
+                       src="/Images/@item.ImageNameFir" alt="@item.ImageNameFir"  /></center>
                   </div>
                 </div>
             </td>
             <td>
-               @Html.DisplayFor(modelItem => item.NombreInsti)
+               @Html.DisplayFor(modelItem => item.NombreFirma)
             </td>               
         </tr>
         count++;
