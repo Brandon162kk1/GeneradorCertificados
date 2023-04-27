@@ -12,5 +12,6 @@ public class ApplicationDbContext : IdentityDbContext
 
     public DbSet<Vecinos> DataVecinos { get; set; }
     public DbSet<Eventos> DataEventos { get; set; }
+    public DbSet<Logos> DataLogos { get; set; }
 
 }
