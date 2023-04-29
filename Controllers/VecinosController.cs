@@ -82,6 +82,58 @@ namespace Software2.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null || _context.DataVecinos == null)
+            {
+                return NotFound();
+            }
+
+            var vecinos = await _context.DataVecinos.FindAsync(id);
+            if (vecinos == null)
+            {
+                return NotFound();
+            }
+            return View(vecinos);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombres,Apellidos,Correo,Celular,Dni")] Vecinos vecinos)
+        {
+            if (id != vecinos.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(vecinos);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!VecinosExists(vecinos.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(vecinos);
+        }
+
+        private bool VecinosExists(int id)
+        {
+          return (_context.DataVecinos?.Any(e => e.Id == id)).GetValueOrDefault();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

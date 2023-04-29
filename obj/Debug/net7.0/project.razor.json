@@ -18740,6 +18740,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Software2\\Views\\Vecinos\\Edit.cshtml",
+      "TargetPath": "Views\\Vecinos\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Software2\\Views\\Vecinos\\Create.cshtml",
       "TargetPath": "Views\\Vecinos\\Create.cshtml",
       "FileKind": "mvc"

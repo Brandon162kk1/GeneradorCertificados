@@ -9,12 +9,32 @@
       "PackagePath": "staticwebassets\\Images\\admin.png"
     },
     {
+      "Id": "C:\\Software2\\wwwroot\\Images\\agraria.jpeg",
+      "PackagePath": "staticwebassets\\Images\\agraria.jpeg"
+    },
+    {
+      "Id": "C:\\Software2\\wwwroot\\Images\\callao.png",
+      "PackagePath": "staticwebassets\\Images\\callao.png"
+    },
+    {
       "Id": "C:\\Software2\\wwwroot\\Images\\editar.png",
       "PackagePath": "staticwebassets\\Images\\editar.png"
     },
     {
       "Id": "C:\\Software2\\wwwroot\\Images\\eliminar.png",
       "PackagePath": "staticwebassets\\Images\\eliminar.png"
+    },
+    {
+      "Id": "C:\\Software2\\wwwroot\\Images\\firma1.jpeg",
+      "PackagePath": "staticwebassets\\Images\\firma1.jpeg"
+    },
+    {
+      "Id": "C:\\Software2\\wwwroot\\Images\\firma2.jpg",
+      "PackagePath": "staticwebassets\\Images\\firma2.jpg"
+    },
+    {
+      "Id": "C:\\Software2\\wwwroot\\Images\\firma3.jpeg",
+      "PackagePath": "staticwebassets\\Images\\firma3.jpeg"
     },
     {
       "Id": "C:\\Software2\\wwwroot\\Images\\molina.png",
