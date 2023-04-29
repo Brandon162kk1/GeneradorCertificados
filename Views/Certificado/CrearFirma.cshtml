@@ -13,13 +13,13 @@
             <form asp-action="CrearFirma" class="row g-3">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
   <div class="col-md-12">
-    <label class="control-label">Nombre del Firmante</label>
-                <input asp-for="NombreFirma" class="form-control" />
+    <label class="control-label" for="validationCustom01">Nombre del Firmante</label>
+                <input asp-for="NombreFirma" class="form-control" id="validationCustom01" required/>
                 <span asp-validation-for="NombreFirma" class="text-danger"></span>
   </div>
   <div class="col-12">
-    <label class="control-label">Imagen</label>
-                <input asp-for="ImageNameFir" type="file" class="form-control" />
+    <label class="control-label" for="validationCustom01">Imagen</label>
+                <input asp-for="ImageNameFir" type="file" class="form-control" id="validationCustom01" required/>
                 <span asp-validation-for="ImageNameFir" class="text-danger"></span>
   </div>
   <div class="col-md-6">

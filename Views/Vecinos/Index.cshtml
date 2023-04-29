@@ -6,6 +6,7 @@
 }
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <main>
+    <a class="btn btn-outline-danger" asp-action="Create">Agregar Vecinos</a>
     <center><h4>Lista de Usuarios Inscritos en Eventos</h4></center><br>
     <form action="/Vecinos" method="post">
         <div class="col-lg-5 mx-auto">
@@ -55,7 +56,8 @@
                 @Html.DisplayFor(modelItem => item.Celular)
             </td>
             <td>
-                ---
+               <a asp-action="" asp-route-id="@item.Id"><img src="/Images/editar.png" width="40px" heigh="40px"></a>
+               <a asp-action="" asp-route-id="@item.Id" onclick="return confirm('¿Esta seguro de eliminar el logo?')"><img src="/Images/eliminar.png" width="40px" heigh="40px"></a>
             </td>
         </tr>
         count++;

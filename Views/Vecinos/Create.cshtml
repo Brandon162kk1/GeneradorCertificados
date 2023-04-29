@@ -14,28 +14,28 @@
             <form asp-action="Create" class="row g-3">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
   <div class="col-md-6">
-    <label class="control-label">Nombres</label>
-                <input asp-for="Nombres" class="form-control" />
+    <label class="control-label" for="validationCustom01">Nombres</label>
+                <input asp-for="Nombres" class="form-control" id="validationCustom01" required />
                 <span asp-validation-for="Nombres" class="text-danger"></span>
   </div>
   <div class="col-md-6">
-    <label class="control-label">Apellidos</label>
-                <input asp-for="Apellidos"class="form-control" />
+    <label class="control-label" for="validationCustom01">Apellidos</label>
+                <input asp-for="Apellidos"class="form-control" id="validationCustom01" required/>
                 <span asp-validation-for="Apellidos" class="text-danger"></span>
   </div>
   <div class="col-md-4">
-    <label class="control-label">Dni</label>
-                <input asp-for="Dni" class="form-control" />
+    <label class="control-label" for="validationCustom01">Dni</label>
+                <input asp-for="Dni" class="form-control" id="validationCustom01" required/>
                 <span asp-validation-for="Dni" class="text-danger"></span>
   </div>
   <div class="col-md-4">
-    <label class="control-label">Celular</label>
-                <input asp-for="Celular" class="form-control" />
+    <label class="control-label" for="validationCustom01">Celular</label>
+                <input asp-for="Celular" class="form-control" id="validationCustom01" required/>
                 <span asp-validation-for="Celular" class="text-danger"></span>
   </div>
   <div class="col-md-10">
-    <label class="control-label">Correo</label>
-                <input asp-for="Correo" type="email" class="form-control" />
+    <label class="control-label" for="validationCustom01">Correo</label>
+                <input asp-for="Correo" type="email" class="form-control" id="validationCustom01" required/>
                 <span asp-validation-for="Correo" class="text-danger"></span>
   </div>
   <div class="col-md-6">

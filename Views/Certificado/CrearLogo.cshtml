@@ -13,13 +13,13 @@
             <form asp-action="CrearLogo" class="row g-3">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
   <div class="col-md-12">
-    <label class="control-label">Nombre de la Institución</label>
-                <input asp-for="NombreInsti" class="form-control" />
+    <label class="control-label" for="validationCustom01">Nombre de la Institución</label>
+                <input asp-for="NombreInsti" class="form-control" id="validationCustom01" required/>
                 <span asp-validation-for="NombreInsti" class="text-danger"></span>
   </div>
   <div class="col-12">
-    <label class="control-label">Imagen</label>
-                <input asp-for="ImageName" type="file" class="form-control" />
+    <label class="control-label" for="validationCustom01">Imagen</label>
+                <input asp-for="ImageName" type="file" class="form-control" id="validationCustom01" required/>
                 <span asp-validation-for="ImageName" class="text-danger"></span>
   </div>
   <div class="col-md-6">

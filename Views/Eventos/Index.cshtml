@@ -23,11 +23,6 @@
                   <h1 class="card-title">@Html.DisplayFor(modelItem => item.NombreEvento)</h1>
                   <p class="card-text">Codigo Evento: @Html.DisplayFor(modelItem => item.CodEvento)</p>
                   <p class="card-text">Horario: @Html.DisplayFor(modelItem => item.Horario)</p>
-                  <p>
-                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>Modificar</button>
-                    <button type="button" class="btn btn-outline-danger" onclick="agregacion();" asp-action="Add" asp-route-id="@item.Id"><span class="glyphicon glyphicon-pencil"></span>Suspender</button>
-                    <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-remove"></span>Ver Plantilla</button>
-                  </p>
                   </center>
                 </div>
               </div>
