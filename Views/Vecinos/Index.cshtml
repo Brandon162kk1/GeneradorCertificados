@@ -56,8 +56,8 @@
                 @Html.DisplayFor(modelItem => item.Celular)
             </td>
             <td>
-               <a asp-action="" asp-route-id="@item.Id"><img src="/Images/editar.png" width="40px" heigh="40px"></a>
-               <a asp-action="" asp-route-id="@item.Id" onclick="return confirm('¿Esta seguro de eliminar el logo?')"><img src="/Images/eliminar.png" width="40px" heigh="40px"></a>
+               <!--<a asp-action="" asp-route-id="@item.Id"><img src="/Images/editar.png" width="40px" heigh="40px"></a>-->
+               <a asp-action="Delete" asp-route-id="@item.Id"><img src="/Images/eliminar.png" width="40px" heigh="40px"></a>
             </td>
         </tr>
         count++;

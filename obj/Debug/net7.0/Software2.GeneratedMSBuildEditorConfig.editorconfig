@@ -52,6 +52,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cQ3JlYXJMb2dvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Software2/Views/Certificado/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Software2/Views/Certificado/Firmas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cRmlybWFzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -98,6 +102,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Software2/Views/Vecinos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVjaW5vc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Software2/Views/Vecinos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVjaW5vc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Software2/Views/Vecinos/Index.cshtml]

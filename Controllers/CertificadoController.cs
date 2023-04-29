@@ -68,6 +68,41 @@ namespace Software2.Controllers
             return View(firmas);
         }
 
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null || _context.DataLogos == null)
+            {
+                return NotFound();
+            }
+
+            var logos = await _context.DataLogos
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (logos == null)
+            {
+                return NotFound();
+            }
+
+            return View(logos);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            if (_context.DataLogos == null)
+            {
+                return Problem("Entity set 'ApplicationDbContext.DataLogos'  is null.");
+            }
+            var logos = await _context.DataLogos.FindAsync(id);
+            if (logos != null)
+            {
+                _context.DataLogos.Remove(logos);
+            }
+            
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
