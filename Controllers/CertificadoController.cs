@@ -31,6 +31,10 @@ namespace Software2.Controllers
         {
             return View(_context.DataLogos);
         }
+        public IActionResult DisenarCerti()
+        {
+            return View(_context.DataDisenarCerti);
+        }
         public IActionResult Firmas()
         {
             return View(_context.DataFirmas);
