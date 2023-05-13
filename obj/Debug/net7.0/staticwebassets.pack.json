@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\Images\\molina.png"
     },
     {
+      "Id": "C:\\Software2\\wwwroot\\Images\\usmp.png",
+      "PackagePath": "staticwebassets\\Images\\usmp.png"
+    },
+    {
       "Id": "C:\\Software2\\wwwroot\\css\\admin.css",
       "PackagePath": "staticwebassets\\css\\admin.css"
     },

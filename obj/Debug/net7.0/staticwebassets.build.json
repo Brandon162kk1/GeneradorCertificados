@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BTIzwTU5z7txbB13L7sPDWZ3dcE2t6AfNkIIyJdwePo=",
+  "Hash": "7Gfe4WvbeY9ONprK/Jjz6pldtUEsl5rwRYt+kgfOalI=",
   "Source": "Software2",
   "BasePath": "_content/Software2",
   "Mode": "Default",
@@ -253,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\molina.png"
+    },
+    {
+      "Identity": "C:\\Software2\\wwwroot\\Images\\usmp.png",
+      "SourceId": "Software2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Software2\\wwwroot\\",
+      "BasePath": "_content/Software2",
+      "RelativePath": "Images/usmp.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\usmp.png"
     },
     {
       "Identity": "C:\\Software2\\wwwroot\\js\\site.js",
