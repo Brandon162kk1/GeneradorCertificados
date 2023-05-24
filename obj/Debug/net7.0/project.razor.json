@@ -18788,6 +18788,16 @@
       "FilePath": "d:\\MICHELLE\\2023\\GeneradorCertificados\\Views\\Vecinos\\Create.cshtml",
       "TargetPath": "Views\\Vecinos\\Create.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\MICHELLE\\2023\\GeneradorCertificados\\Views\\Shared\\_Usuario.cshtml",
+      "TargetPath": "Views\\Shared\\_Usuario.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\MICHELLE\\2023\\GeneradorCertificados\\Views\\Pago\\inicio.cshtml",
+      "TargetPath": "Views\\Pago\\inicio.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.3"
