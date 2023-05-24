@@ -22,9 +22,9 @@
             <th scope="col">
                 FIRMA DEL AUTOR
             </th>
-            <!--<th scope="col">
-                OPCIONES
-            </th>-->
+            <th scope="col">
+                
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -45,8 +45,8 @@
                @Html.DisplayFor(modelItem => item.NombreFirma)
             </td>
             <td>
-               <!--<a asp-action="" asp-route-id="@item.Id"><img src="/Images/editar.png" width="40px" heigh="40px"></a>
-               <a asp-action="" asp-route-id="@item.Id" onclick="return confirm('¿Esta seguro de eliminar la firma?')"><img src="/Images/eliminar.png" width="40px" heigh="40px"></a>-->
+               <a asp-action="EditFirma" asp-route-id="@item.Id"><img src="/Images/editar.png" width="40px" heigh="40px"></a>
+               <a asp-action="DeleteFirma" asp-route-id="@item.Id"><img src="/Images/eliminar.png" width="40px" heigh="40px"></a>
             </td>               
         </tr>
         count++;

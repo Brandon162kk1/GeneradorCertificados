@@ -32,9 +32,9 @@ namespace GeneradorCertificados.Controllers
             _context = context;
         }
 
-        public IActionResult inicio()
+        public IActionResult Index()
         {
-            return View("inicio");
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

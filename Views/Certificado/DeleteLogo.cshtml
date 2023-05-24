@@ -1,0 +1,40 @@
+@model Software2.Models.Logos
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "_Administrador";
+}
+<main>
+<div>
+    <h4><center>Información del Logo</center></h4>
+    <hr/>
+
+<div class="row">
+      <div class="col-lg-7 mx-auto">
+        <div  class="card" style="border-radius: 20px; padding: 1rem 1rem; height: 330px;">
+          <div class="card-body">
+            <dl class="row">
+        <dt class = "col-sm-10">
+            Nombre de la Institución:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NombreInsti)
+        </dd>
+        <dt class = "col-sm-10">
+            Logo:
+        </dt>
+        <dd class = "col-sm-12">
+            <br><center><img class="img-responsive" width="150" height="70" src="/Images/@Html.DisplayFor(model => model.ImageName)" alt="@Html.DisplayFor(model => model.ImageName)"  /></center>
+        </center>
+        </dd>
+    </dl>
+    <center><form asp-action="Delete">
+        <input type="hidden" asp-for="Id"/>
+        <input type="submit" value="Eliminar" class="btn btn-danger" onclick="return confirm('¿Desea eliminar el logo?')"/>
+        <a class="btn btn-info" asp-action="Logos">Regresar</a>
+    </form></center>
+          </div>
+        </div>
+      </div> 
+      </div>
+</div>
+</main>

@@ -1,0 +1,36 @@
+@model Software2.Models.Firmas
+@{
+    ViewData["Title"] = "EditFirmas";
+    Layout = "_Administrador";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<main>
+<a class="btn btn-outline-danger" asp-action="Firmas">Regresar</a>
+<br><br>
+      <div class="row">
+      <div class="col-lg-7 mx-auto">
+        <div  class="card" style="border-radius: 20px; padding: 1rem 1rem; height: 330px;">
+          <div class="card-body">
+            <form asp-action="EditFirma" class="row g-3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+  <div class="col-md-12">
+    <label class="control-label" for="validationCustom01">Nombres</label>
+                <input asp-for="NombreFirma" class="form-control" id="validationCustom01" required />
+                <span asp-validation-for="NombreFirma" class="text-danger"></span>
+  </div>
+  <div class="col-12">
+    <label class="control-label">Imagen</label>
+                <input asp-for="ImageNameFir" type="file" class="form-control" />
+                <span asp-validation-for="ImageNameFir" class="text-danger"></span>
+  </div>
+  <div class="col-md-6">
+        <input type="submit" value="Guardar Cambios" class="btn btn-primary" />
+   </div>
+</form>
+          </div>
+        </div>
+      </div> 
+      </div>
+
+</main>

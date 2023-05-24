@@ -33,7 +33,7 @@ namespace Software2.Controllers
         }
         public IActionResult DisenarCerti()
         {
-            return View(_context.DataDisenarCerti);
+            return View();
         }
         public IActionResult Firmas()
         {
@@ -72,7 +72,7 @@ namespace Software2.Controllers
             return View(firmas);
         }
 
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> DeleteLogo(int? id)
         {
             if (id == null || _context.DataLogos == null)
             {
@@ -89,7 +89,24 @@ namespace Software2.Controllers
             return View(logos);
         }
 
-        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> DeleteFirma(int? id)
+        {
+            if (id == null || _context.DataFirmas == null)
+            {
+                return NotFound();
+            }
+
+            var firmas = await _context.DataFirmas
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (firmas == null)
+            {
+                return NotFound();
+            }
+
+            return View(firmas);
+        }
+
+        [HttpPost, ActionName("DeleteLogo")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
@@ -105,6 +122,110 @@ namespace Software2.Controllers
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> EditFirma(int? id)
+        {
+            if (id == null || _context.DataFirmas == null)
+            {
+                return NotFound();
+            }
+
+            var firmas = await _context.DataFirmas.FindAsync(id);
+            if (firmas == null)
+            {
+                return NotFound();
+            }
+            return View(firmas);
+        }
+
+        public async Task<IActionResult> EditLogo(int? id)
+        {
+            if (id == null || _context.DataLogos == null)
+            {
+                return NotFound();
+            }
+
+            var logos = await _context.DataLogos.FindAsync(id);
+            if (logos == null)
+            {
+                return NotFound();
+            }
+            return View(logos);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditFirma(int id, [Bind("Id,NombreFirma,ImageNameFir")] Firmas firmas)
+        {
+            if (id != firmas.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(firmas);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!FirmasExists(firmas.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(firmas);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditLogo(int id, [Bind("Id,NombreInsti,ImageName")] Logos logos)
+        {
+            if (id != logos.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(logos);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!LogosExists(logos.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(logos);
+        }
+
+        private bool FirmasExists(int id)
+        {
+          return (_context.DataFirmas?.Any(e => e.Id == id)).GetValueOrDefault();
+        }
+
+        private bool LogosExists(int id)
+        {
+          return (_context.DataLogos?.Any(e => e.Id == id)).GetValueOrDefault();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

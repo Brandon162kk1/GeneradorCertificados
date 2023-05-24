@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GeneradorCertificados.Models
+namespace Software2.Models
 {
      [Table("t_pago")]
     public class Pago
