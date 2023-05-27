@@ -14343,26 +14343,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alejandro\\.nuget\\packages\\": {}
+    "C:\\Users\\Asus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MICHELLE\\2023\\GeneradorCertificados\\Software2.csproj",
+      "projectUniqueName": "C:\\Software2\\Software2.csproj",
       "projectName": "Software2",
-      "projectPath": "D:\\MICHELLE\\2023\\GeneradorCertificados\\Software2.csproj",
-      "packagesPath": "C:\\Users\\Alejandro\\.nuget\\packages\\",
-      "outputPath": "D:\\MICHELLE\\2023\\GeneradorCertificados\\obj\\",
+      "projectPath": "C:\\Software2\\Software2.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Software2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Alejandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -14453,7 +14451,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

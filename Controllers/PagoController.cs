@@ -37,24 +37,11 @@ namespace GeneradorCertificados.Controllers
             return View();
         }
 
-         public IActionResult Create(Decimal monto)
-        {
-            Pago pago = new Pago();
-            pago.UserID = _userManager.GetUserName(User);
-
-            pago.MontoTotal = 30;
-            //pago.MontoTotal =  Convert.ToDecimal(TempData["montoTotal"]);
-            return View(pago);
-        }
-
-
         [HttpPost]
         public IActionResult Pagar()
         {
             return View("RegistrarPagoSubmit");
         }
-
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
