@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <PackageReference Include="AWSSDK.RDS" Version="3.7.114.35" />
+    <PackageReference Include="DinkToPdf" Version="1.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.4" />

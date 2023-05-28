@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "TyjRXiribX42ldTBddU+XZDHBZBSPPqrlqVLlfZk/g+oVZTfCnMsvBGKsbN2rpAm7C2UsM4bzGlbq4cDpUBAdA==",
+  "dgSpecHash": "7aFs9jembOrHvO1LaG+TKz9hr/Ep5eEP3ya2GnZtqTxtuEiD1IVZ2UFpiPqbLtoK0A4UAFsVNyU7ZDYAWMfG9Q==",
   "success": true,
   "projectFilePath": "C:\\Software2\\Software2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\anglesharp\\0.9.9\\anglesharp.0.9.9.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\awssdk.core\\3.7.105.16\\awssdk.core.3.7.105.16.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\awssdk.rds\\3.7.114.35\\awssdk.rds.3.7.114.35.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\dinktopdf\\1.0.8\\dinktopdf.1.0.8.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\epplus\\6.0.4\\epplus.6.0.4.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\epplus.interfaces\\6.0.0\\epplus.interfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\epplus.system.drawing\\6.0.0\\epplus.system.drawing.6.0.0.nupkg.sha512",
@@ -282,6 +283,7 @@
     "C:\\Users\\Asus\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.threading.tasks.dataflow\\4.9.0\\system.threading.tasks.dataflow.4.9.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.threading.thread\\4.0.0\\system.threading.thread.4.0.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
