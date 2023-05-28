@@ -28,7 +28,7 @@
 .sidebar-brand {
     height: 100px;
     padding: 1rem 0rem 1rem 2rem;
-    color: #fff;
+    color: white;
 }
 
 .sidebar-brand span {
@@ -63,7 +63,7 @@
 
 .sidebar-menu a span:first-child {
     font-size: 1.5rem;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 }
 
 #nav-toggle:checked+.sidebar {
@@ -72,7 +72,7 @@
 
 #nav-toggle:checked+.sidebar .sidebar-brand,
 #nav-toggle:checked+.sidebar li {
-    padding-left: 1rem;
+    padding-left: 0.1rem;/*para que la casita se vea*/
     text-align: center;
 }
 
@@ -86,7 +86,7 @@
 }
 
 #nav-toggle:checked~.main-content {
-    margin-left: 70px;
+    margin-left: 20px;
 }
 
 #nav-toggle:checked~.main-content header {
@@ -96,12 +96,12 @@
 
 .main-content {
     transition: margin-left 300ms;
-    margin-left: 345px;
+    margin-left: 320px;
 }
 
 header {
     height: 100px;
-    background: #fff;
+    background: #9e9fab;
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem;
@@ -167,7 +167,7 @@ header label span {
 main {
     margin-top: 85px;
     padding: 2rem 1.5rem;
-    background: #f1f5f9;
+    background: white;
     min-height: calc(100vh - 90px);
 }
 
