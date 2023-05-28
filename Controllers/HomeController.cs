@@ -14,11 +14,11 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
     private readonly ApplicationDbContext _context;
-
     public HomeController(ILogger<HomeController> logger,ApplicationDbContext context)
     {
         _logger = logger;
         _context = context;
+
     }
 
     public IActionResult Privacy()
@@ -36,14 +36,22 @@ public class HomeController : Controller
         var query1 = lista;
 
         if(searchString != null){
-                query1 = query1.Where(p => p.Dni.Contains(searchString)).ToList();
-                ViewData["Message"] = "Hola"+" "+searchString+" se encontraron certificados";
+
+            //GeneratePdfReport(itemsPDF.ToList());//
+            //_context.Add(formato);//
+            
+            query1 = query1.Where(p => p.Dni.Contains(searchString)).ToList();
+            ViewData["Message"] = "Hola"+" "+searchString+" se encontraron certificados";
+
+        }else{
+            return View("Index");
         }
 
         var resultado = query1.ToList();
 
         return View(resultado);
     }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

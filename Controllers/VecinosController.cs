@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using Software2.Data;
 using Software2.Models;
+using DinkToPdf;
 namespace Software2.Controllers
 {
 
@@ -139,5 +140,6 @@ namespace Software2.Controllers
         {
             return View("Error!");
         }
+
     }
 }
