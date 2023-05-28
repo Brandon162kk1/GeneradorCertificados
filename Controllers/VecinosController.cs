@@ -99,7 +99,7 @@ namespace Software2.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombres,Apellidos,Correo,Celular,Dni")] Vecinos vecinos)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombres,Apellidos,Correo,Celular,Dni,Evento")] Vecinos vecinos)
         {
             if (id != vecinos.Id)
             {

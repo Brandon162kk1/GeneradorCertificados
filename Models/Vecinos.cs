@@ -29,8 +29,5 @@ namespace Software2.Models
 
         [Column("Evento")]
         public string? Evento{ get; set; }
-
-        [Column("Certificado")]
-        public Byte [] archivo {get; set;} = new Byte[1];
     }
 }

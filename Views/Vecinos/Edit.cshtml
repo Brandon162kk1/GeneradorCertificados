@@ -34,6 +34,16 @@
                 <input asp-for="Celular" class="form-control" id="validationCustom01" required/>
                 <span asp-validation-for="Celular" class="text-danger"></span>
   </div>
+  <div class="col-md-4">
+    <label class="control-label" for="validationCustom01">Evento</label>
+        <select asp-for="Evento" class="form-select" id="validationCustom01" required>
+          <option selected></option>
+          <option value="Futbol">Futbol</option>
+          <option value="Voley">Voley</option>
+          <option value="Natacion">Natacion</option>
+        </select>
+      <span asp-validation-for="Evento" class="text-danger"></span>
+  </div>
   <div class="col-md-10">
     <label class="control-label" for="validationCustom01">Correo</label>
                 <input asp-for="Correo" type="email" class="form-control" id="validationCustom01" required/>

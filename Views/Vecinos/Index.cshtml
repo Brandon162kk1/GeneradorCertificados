@@ -33,6 +33,9 @@
                 CELULAR
             </th>
             <th scope="col">
+                EVENTO
+            </th>
+            <th scope="col">
                 
             </th>
         </tr>
@@ -54,6 +57,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Celular)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Evento)
             </td>
             <td>
                <a asp-action="Edit" asp-route-id="@item.Id"><img src="/Images/editar.png" width="40px" heigh="40px"></a>
