@@ -52,6 +52,17 @@ public class HomeController : Controller
         return View(resultado);
     }
 
+    public IActionResult VistaPago()
+        {
+            return View();
+            //return View("RegistrarPagoSubmit");
+        }
+
+        public IActionResult Pagar()
+        {
+            return View("PagoConfirmado");
+        }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

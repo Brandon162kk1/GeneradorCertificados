@@ -11,8 +11,10 @@
       <a asp-controller="" asp-action="" class="btn btn-primary">Ingresar otra consulta</a>
     </div>
 }else{
-      <div class="alert alert-warning text-center">Recuerda debes pagar para poder descargar tus certificados</div>
-      <!--<a asp-controller="Pago" asp-action="Pagar" class="btn btn-primary">Pagar Aqui</a>-->
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        Recuerda debes pagar para poder descargar tus certificados.<strong> <a asp-controller="Home" asp-action="VistaPago">Paga Aqui !!!</a></strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
       <a class="btn btn-danger" asp-action="Index">Regresar</a>
       <br>
 <div class="container">
@@ -27,9 +29,12 @@
               <div id="carta" class="card mb-3">
                 <div class="card-body">
                   <center>
-                  <h4 class="card-title">@Html.DisplayFor(modelItem => item.Nombres)@Html.DisplayFor(modelItem => item.Apellidos)</h4>
+                  <h4 class="card-title">Evento: @Html.DisplayFor(modelItem => item.Evento)</h4>
+                  <p class="card-text">@Html.DisplayFor(modelItem => item.Nombres)@Html.DisplayFor(modelItem => item.Apellidos)</p>
                   <p class="card-text">Correo: @Html.DisplayFor(modelItem => item.Correo)</p>
-                  <p class="card-text">Evento: @Html.DisplayFor(modelItem => item.Evento)</p>
+                  <div>
+                    <a class="btn btn-outline-danger">DESCARGAR PDF</a>
+                  </div>
                   </center>
                 </div>
               </div>
