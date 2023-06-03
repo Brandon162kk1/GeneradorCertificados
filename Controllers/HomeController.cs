@@ -72,8 +72,8 @@ public class HomeController : Controller
 
     public IActionResult DownLoadPedidos(int id){
         
-           var pedidos = _context.DataVecinos.Find(id);
-           byte[] archivo = pedidos.archivo;
+           var certificado = _context.DataVecinos.Find(id);
+           byte[] archivo = certificado.archivo;
            
            if(archivo == null){
                return NotFound();
