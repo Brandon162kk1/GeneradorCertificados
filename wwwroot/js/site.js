@@ -36,7 +36,7 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
   var modalTitle = exampleModal.querySelector('.modal-title')
   var modalBodyInput = exampleModal.querySelector('.modal-body input')
 
-  modalTitle.textContent = 'New message to ' + recipient
+  modalTitle.textContent = 'Formulario de Pago '
   modalBodyInput.value = recipient
 })
   
