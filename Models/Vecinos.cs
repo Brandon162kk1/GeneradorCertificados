@@ -31,6 +31,6 @@ namespace Software2.Models
         public string? Evento{ get; set; }
 
         [Column("Certificado")]
-        public Byte [] archivo {get; set;} = new Byte[1];
+        public Byte []? archivo {get; set;} = new Byte[1];
     }
 }
