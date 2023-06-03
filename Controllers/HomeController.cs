@@ -70,4 +70,17 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 
+    public IActionResult DownLoadPedidos(int id){
+        
+           var pedidos = _context.DataVecinos.Find(id);
+           byte[] archivo = pedidos.archivo;
+           
+           if(archivo == null){
+               return NotFound();
+           }
+           
+           return File(archivo, "application/octet-stream", "Certificado.pdf");  
+          
+        }
+
 }
