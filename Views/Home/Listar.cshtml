@@ -121,7 +121,7 @@
                   <p class="card-text">@Html.DisplayFor(modelItem => item.Nombres)@Html.DisplayFor(modelItem => item.Apellidos)</p>
                   <p class="card-text">Correo: @Html.DisplayFor(modelItem => item.Correo)</p>
                   <div>
-                    <a class="btn btn-outline-danger">DESCARGAR PDF</a>
+                    <a class="btn btn-outline-danger" asp-controller="Home"asp-action="DownLoadPedidos">DESCARGAR PDF</a>
                   </div>
                   </center>
                 </div>

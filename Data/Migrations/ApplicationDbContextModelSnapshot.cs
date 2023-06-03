@@ -397,6 +397,11 @@ namespace Software2.Data.Migrations
                         .HasColumnType("text")
                         .HasColumnName("Nombre");
 
+                    b.Property<byte[]>("archivo")
+                        .IsRequired()
+                        .HasColumnType("bytea")
+                        .HasColumnName("Certificado");
+
                     b.HasKey("Id");
 
                     b.ToTable("t_vecinos");

@@ -12,7 +12,7 @@ using Software2.Data;
 namespace Software2.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230421164626_VecinosMigration")]
+    [Migration("20230603163803_VecinosMigration")]
     partial class VecinosMigration
     {
         /// <inheritdoc />
@@ -225,6 +225,40 @@ namespace Software2.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Software2.Models.DisenarCerti", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<byte[]>("archivo")
+                        .IsRequired()
+                        .HasColumnType("bytea")
+                        .HasColumnName("Certificado");
+
+                    b.Property<int>("firmasId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("logosId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("vecinosId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("firmasId");
+
+                    b.HasIndex("logosId");
+
+                    b.HasIndex("vecinosId");
+
+                    b.ToTable("t_dicert");
+                });
+
             modelBuilder.Entity("Software2.Models.Eventos", b =>
                 {
                     b.Property<int>("Id")
@@ -253,6 +287,84 @@ namespace Software2.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("t_eventos");
+                });
+
+            modelBuilder.Entity("Software2.Models.Firmas", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ImageNameFir")
+                        .HasColumnType("text")
+                        .HasColumnName("ImageNameFir");
+
+                    b.Property<string>("NombreFirma")
+                        .HasColumnType("text")
+                        .HasColumnName("NombreFirma");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("t_firmas");
+                });
+
+            modelBuilder.Entity("Software2.Models.Formato", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Apellidos")
+                        .HasColumnType("text")
+                        .HasColumnName("Apellidos");
+
+                    b.Property<string>("Dni")
+                        .HasColumnType("text")
+                        .HasColumnName("Dni");
+
+                    b.Property<string>("Evento")
+                        .HasColumnType("text")
+                        .HasColumnName("Evento");
+
+                    b.Property<string>("Nombres")
+                        .HasColumnType("text")
+                        .HasColumnName("Nombre");
+
+                    b.Property<byte[]>("archivo")
+                        .IsRequired()
+                        .HasColumnType("bytea");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("t_formato");
+                });
+
+            modelBuilder.Entity("Software2.Models.Logos", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ImageName")
+                        .HasColumnType("text")
+                        .HasColumnName("ImageName");
+
+                    b.Property<string>("NombreInsti")
+                        .HasColumnType("text")
+                        .HasColumnName("NombreInsti");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("t_logos");
                 });
 
             modelBuilder.Entity("Software2.Models.Vecinos", b =>
@@ -287,6 +399,11 @@ namespace Software2.Data.Migrations
                     b.Property<string>("Nombres")
                         .HasColumnType("text")
                         .HasColumnName("Nombre");
+
+                    b.Property<byte[]>("archivo")
+                        .IsRequired()
+                        .HasColumnType("bytea")
+                        .HasColumnName("Certificado");
 
                     b.HasKey("Id");
 
@@ -342,6 +459,33 @@ namespace Software2.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Software2.Models.DisenarCerti", b =>
+                {
+                    b.HasOne("Software2.Models.Firmas", "firmas")
+                        .WithMany()
+                        .HasForeignKey("firmasId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Software2.Models.Logos", "logos")
+                        .WithMany()
+                        .HasForeignKey("logosId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Software2.Models.Vecinos", "vecinos")
+                        .WithMany()
+                        .HasForeignKey("vecinosId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("firmas");
+
+                    b.Navigation("logos");
+
+                    b.Navigation("vecinos");
                 });
 #pragma warning restore 612, 618
         }

@@ -10,13 +10,20 @@ namespace Software2.Data.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-
+            migrationBuilder.AddColumn<byte[]>(
+                name: "Certificado",
+                table: "t_vecinos",
+                type: "bytea",
+                nullable: false,
+                defaultValue: new byte[0]);
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-
+            migrationBuilder.DropColumn(
+                name: "Certificado",
+                table: "t_vecinos");
         }
     }
 }
