@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\Images\\firma3.jpeg"
     },
     {
+      "Id": "C:\\Software2\\wwwroot\\Images\\fon.jpg",
+      "PackagePath": "staticwebassets\\Images\\fon.jpg"
+    },
+    {
       "Id": "C:\\Software2\\wwwroot\\Images\\loop.jpg",
       "PackagePath": "staticwebassets\\Images\\loop.jpg"
     },

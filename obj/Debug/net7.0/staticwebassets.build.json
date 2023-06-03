@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0myl+Z5sXOhag84p7e2P7jQouWMaG7BKekUkTKwPtRk=",
+  "Hash": "X9qycgyHYgT0P4CuV/FOi25ZQbWEP0NojNXShwm7zLE=",
   "Source": "Software2",
   "BasePath": "_content/Software2",
   "Mode": "Default",
@@ -236,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\firma3.jpeg"
+    },
+    {
+      "Identity": "C:\\Software2\\wwwroot\\Images\\fon.jpg",
+      "SourceId": "Software2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Software2\\wwwroot\\",
+      "BasePath": "_content/Software2",
+      "RelativePath": "Images/fon.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\fon.jpg"
     },
     {
       "Identity": "C:\\Software2\\wwwroot\\Images\\loop.jpg",
