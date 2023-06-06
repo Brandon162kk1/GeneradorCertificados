@@ -4,8 +4,23 @@
 }
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <main>
-      <div>
-            <p>Bienvenido a la sección de administrador</p>
-            <h1><marquee>En este apartado podras emitir certificados a cada vecino!!</marquee></h1>
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container">
+        <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-8">
+          <center><h2>¿Que deseas Realizar?</h2></center>
+          <br>
+        <div class="section-title">
+        <a class="nav-link" asp-controller="Vecinos" asp-action="Index"><center><button type="submit" class="btn btn-primary">Vecinos</button></center></a>
+        <br>
+        <a class="nav-link" asp-controller="Eventos" asp-action="Index"><center><button type="submit" class="btn btn-primary">Eventos</button></center></a>
+        <br>
+        <a class="nav-link" asp-controller="Certificado" asp-action="Logos"><center><button type="submit" class="btn btn-primary">Logos</button></center></a>
+        <br>
+        <a class="nav-link" asp-controller="Certificado" asp-action="Firmas"><center><button type="submit" class="btn btn-primary">Logos</button></center></a>
         </div>
+        </div>
+        </div>
+    </div>
+    </section>
 </main>
