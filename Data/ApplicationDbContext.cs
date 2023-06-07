@@ -14,8 +14,5 @@ public class ApplicationDbContext : IdentityDbContext
     public DbSet<Eventos> DataEventos { get; set; }
     public DbSet<Logos> DataLogos { get; set; }
     public DbSet<Firmas> DataFirmas { get; set; }
-    public DbSet<DisenarCerti> DataDisenarCerti { get; set; }
-    public DbSet<Formato> DataFormato { get; set; }
-   
     //public DbSet<Pago> DataPago { get; set; }
 }
