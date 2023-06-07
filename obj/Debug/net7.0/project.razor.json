@@ -18765,11 +18765,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Software2\\Views\\Home\\VistaParaPDF.cshtml",
-      "TargetPath": "Views\\Home\\VistaParaPDF.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Software2\\Views\\Vecinos\\Create.cshtml",
       "TargetPath": "Views\\Vecinos\\Create.cshtml",
       "FileKind": "mvc"
@@ -18827,11 +18822,6 @@
     {
       "FilePath": "c:\\Software2\\Views\\Certificado\\EditLogo.cshtml",
       "TargetPath": "Views\\Certificado\\EditLogo.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Software2\\Views\\Home\\MostrarPDFenPagina.cshtml",
-      "TargetPath": "Views\\Home\\MostrarPDFenPagina.cshtml",
       "FileKind": "mvc"
     },
     {

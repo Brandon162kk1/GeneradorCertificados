@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets\\css\\admin.css"
     },
     {
+      "Id": "C:\\Software2\\wwwroot\\css\\pdf.css",
+      "PackagePath": "staticwebassets\\css\\pdf.css"
+    },
+    {
       "Id": "C:\\Software2\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

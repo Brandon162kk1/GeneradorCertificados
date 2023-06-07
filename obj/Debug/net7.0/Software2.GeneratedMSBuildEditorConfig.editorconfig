@@ -96,10 +96,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXN0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Software2/Views/Home/MostrarPDFenPagina.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNb3N0cmFyUERGZW5QYWdpbmEuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Software2/Views/Home/PagoConfirmado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYWdvQ29uZmlybWFkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -110,10 +106,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Software2/Views/Home/VistaPago.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaXN0YVBhZ28uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Software2/Views/Home/VistaParaPDF.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaXN0YVBhcmFQREYuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Software2/Views/Pago/Index.cshtml]

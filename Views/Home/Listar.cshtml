@@ -120,8 +120,8 @@
                   <h4 class="card-title">Evento: @Html.DisplayFor(modelItem => item.Evento)</h4>
                   <p class="card-text">@Html.DisplayFor(modelItem => item.Nombres)@Html.DisplayFor(modelItem => item.Apellidos)</p>
                   <p class="card-text">Correo: @Html.DisplayFor(modelItem => item.Correo)</p>
-                  <div>
-                    <a asp-action="DownLoadPedidos" asp-route-id="@item.Id" class="btn btn-info">DESCARGAR PDF</a>
+                  <div> <!--asp-route-id="@item.Id"-->
+                    <a asp-action="DescargarPDF" asp-route-id="@item.Id" class="btn btn-info">DESCARGAR PDF</a>
                   </div>
                   </center>
                 </div>

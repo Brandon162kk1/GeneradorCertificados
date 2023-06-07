@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "X9qycgyHYgT0P4CuV/FOi25ZQbWEP0NojNXShwm7zLE=",
+  "Hash": "xbRWuSoQdY6791ivoKecJHo7co1P8BTP1EaYo2rAhBk=",
   "Source": "Software2",
   "BasePath": "_content/Software2",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\admin.css"
+    },
+    {
+      "Identity": "C:\\Software2\\wwwroot\\css\\pdf.css",
+      "SourceId": "Software2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Software2\\wwwroot\\",
+      "BasePath": "_content/Software2",
+      "RelativePath": "css/pdf.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\pdf.css"
     },
     {
       "Identity": "C:\\Software2\\wwwroot\\css\\site.css",
