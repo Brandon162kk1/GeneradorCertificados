@@ -8,16 +8,21 @@ using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using Software2.Data;
 using Software2.Models;
+using DinkToPdf;
+using DinkToPdf.Contracts;
+using Microsoft.AspNetCore.Http.Extensions;
 namespace Software2.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
     private readonly ApplicationDbContext _context;
-    public HomeController(ILogger<HomeController> logger,ApplicationDbContext context)
+    private readonly IConverter _converter;
+    public HomeController(ILogger<HomeController> logger,ApplicationDbContext context,IConverter converter)
     {
         _logger = logger;
         _context = context;
+        _converter = converter;
 
     }
 
@@ -28,6 +33,68 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         return View();
+    }
+
+    public IActionResult VistaParaPDF()
+    {
+        return View();
+    }
+
+    public IActionResult MostrarPDFenPagina()
+    {
+        string pagina_actual = HttpContext.Request.Path;
+            string url_pagina = HttpContext.Request.GetEncodedUrl();
+            url_pagina = url_pagina.Replace(pagina_actual, "");
+            url_pagina = $"{url_pagina}/Home/VistaParaPDF";
+
+
+            var pdf = new HtmlToPdfDocument()
+            {
+                GlobalSettings = new GlobalSettings() { 
+                    PaperSize = PaperKind.A4,
+                    Orientation = Orientation.Portrait
+                },
+                Objects = { 
+                    new ObjectSettings(){ 
+                        Page = url_pagina
+                    }
+                }
+
+            };
+
+            var  archivoPDF = _converter.Convert(pdf);
+
+
+            return File(archivoPDF, "application/pdf");
+    }
+
+    public IActionResult DescargarPDF()
+    {
+        string pagina_actual = HttpContext.Request.Path;
+            string url_pagina = HttpContext.Request.GetEncodedUrl();
+            url_pagina = url_pagina.Replace(pagina_actual, "");
+            url_pagina = $"{url_pagina}/Home/VistaParaPDF";
+
+
+            var pdf = new HtmlToPdfDocument()
+            {
+                GlobalSettings = new GlobalSettings()
+                {
+                    PaperSize = PaperKind.A4,
+                    Orientation = Orientation.Portrait
+                },
+                Objects = {
+                    new ObjectSettings(){
+                        Page = url_pagina
+                    }
+                }
+
+            };
+
+            var archivoPDF = _converter.Convert(pdf);
+            string nombrePDF = "reporte_" + DateTime.Now.ToString("ddMMyyyyHHmmss") + ".pdf";
+
+            return File(archivoPDF, "application/pdf", nombrePDF);
     }
 
     public IActionResult Listar(string searchString)
