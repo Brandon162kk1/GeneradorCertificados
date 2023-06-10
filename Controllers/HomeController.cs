@@ -80,36 +80,12 @@ public class HomeController : Controller
     <title>Certificado Virtual</title>
 </head>
 <body>
-<div class=""row"">
-<div class=""col-lg-4 mx-auto"">
-<p>Se le otorga el presente certificado a:</p><br>
+<br>
+<h1>Se le otorga el presente certificado a:</h1><br>
 <h1><strong>Nombre del Usuario<strong></h1><br>
-<p class=""text-left"">Por haber participado en el CONGRESO INTERNACIONAL DE INGENIERÍA, CIENCIAS
-AERONÁUTICAS Y ARQUIFORO - XXV EDICIÓN: TRANSFORMACIÓN DIGITAL PARA UN
-MUNDO SOSTENIBLE: RETOS POST COVID-19.
-Realizado los días 26 y 27 de noviembre de 2020 de manera virtual. Facultad de
-Ingeniería y Arquitectura de la Universidad de San Martín de Porres, Lima - Perú.</p>
-</div>
-<div class=""col-lg-4 mx-auto"">
-<p>Se le otorga el presente certificado a:</p><br>
-<h1><strong>Nombre del Usuario<strong></h1><br>
-<p class=""text-left"">Por haber participado en el CONGRESO INTERNACIONAL DE INGENIERÍA, CIENCIAS
-AERONÁUTICAS Y ARQUIFORO - XXV EDICIÓN: TRANSFORMACIÓN DIGITAL PARA UN
-MUNDO SOSTENIBLE: RETOS POST COVID-19.
-Realizado los días 26 y 27 de noviembre de 2020 de manera virtual. Facultad de
-Ingeniería y Arquitectura de la Universidad de San Martín de Porres, Lima - Perú.</p>
-</div>
-<div class=""col-lg-4 mx-auto"">
-<p>Se le otorga el presente certificado a:</p><br>
-<h1><strong>Nombre del Usuario<strong></h1><br>
-<p class=""text-left"">Por haber participado en el CONGRESO INTERNACIONAL DE INGENIERÍA, CIENCIAS
-AERONÁUTICAS Y ARQUIFORO - XXV EDICIÓN: TRANSFORMACIÓN DIGITAL PARA UN
-MUNDO SOSTENIBLE: RETOS POST COVID-19.
-Realizado los días 26 y 27 de noviembre de 2020 de manera virtual. Facultad de
-Ingeniería y Arquitectura de la Universidad de San Martín de Porres, Lima - Perú.</p>
-</div>
-</div>
-
+<h1>Por haber participado en el Taller de </h1><br>
+<h1><strong>Evento</strong></h1><br>
+<h1>Realizado los días --- de manera presencial. Municipalidad de la Molina, Lima - Perú.</h1><br>
 </body>
      "; 
      
@@ -117,11 +93,8 @@ Ingeniería y Arquitectura de la Universidad de San Martín de Porres, Lima - Pe
      var footer = $@"
      
 <footer>
-        <p>El monto a pagar fue: S.500</p>
-    
-
-    
-      </footer>
+        <p>Gracias!!!</p>
+</footer>
    </html>
      
      ";
@@ -172,7 +145,7 @@ globalSettings.PaperSize = PaperKind.A4;
             //_context.Add(formato);//
             
             query1 = query1.Where(p => p.Dni.Contains(searchString)).ToList();
-            ViewData["Message"] = "Hola"+" "+searchString+" se encontraron certificados";
+            ViewData["Message"] = "Se encontraron certificados para " + searchString;
 
         }else{
             return View("Index");
