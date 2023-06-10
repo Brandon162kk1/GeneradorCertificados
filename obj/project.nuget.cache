@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CgJVozm8pZEwxtZUgRDbSZyX48amsCcDrttoDV3pzfuH1NJBaqFUgaTgB2h+7E4mzuWj+KAR/9ioZZofVkbYsA==",
+  "dgSpecHash": "7aFs9jembOrHvO1LaG+TKz9hr/Ep5eEP3ya2GnZtqTxtuEiD1IVZ2UFpiPqbLtoK0A4UAFsVNyU7ZDYAWMfG9Q==",
   "success": true,
-  "projectFilePath": "c:\\Software2\\Software2.csproj",
+  "projectFilePath": "C:\\Software2\\Software2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\anglesharp\\0.9.9\\anglesharp.0.9.9.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\awssdk.core\\3.7.105.16\\awssdk.core.3.7.105.16.nupkg.sha512",

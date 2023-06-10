@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Software2\\Software2.csproj": {}
+    "C:\\Software2\\Software2.csproj": {}
   },
   "projects": {
-    "c:\\Software2\\Software2.csproj": {
+    "C:\\Software2\\Software2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Software2\\Software2.csproj",
+        "projectUniqueName": "C:\\Software2\\Software2.csproj",
         "projectName": "Software2",
-        "projectPath": "c:\\Software2\\Software2.csproj",
+        "projectPath": "C:\\Software2\\Software2.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "c:\\Software2\\obj\\",
+        "outputPath": "C:\\Software2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config"
