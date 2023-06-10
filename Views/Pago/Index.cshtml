@@ -58,8 +58,13 @@
                   <input asp-for="MontoTotal" class="form-control" data-thousands="," data-decimal="." />
                 </div>
               </div> 
-              <div class="col-md-6">
-               <input type="submit" value="Pagar" class="btn btn-primary"/>
+              <div>
+                <button type="button" onclick="mostrarMensaje()">PAGAR</button>
+                  <script>
+                      function mostrarMensaje() {
+                          alert("No se puede procesar el pago porque no tiene pagos pendientes.");
+                      }
+                  </script>
               </div>
             </form>
           </div>
@@ -67,7 +72,5 @@
       </div> 
       </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+
 </main>

@@ -36,7 +36,7 @@
                 EVENTO
             </th>
             <th scope="col">
-                GENERAR
+                ESTADO
             </th>
             <th scope="col">
                 
@@ -65,8 +65,8 @@
                 @Html.DisplayFor(modelItem => item.Evento)
             </td>
             <td>
-               <a class="btn btn-outline-danger" asp-action="" asp-route-id="">CERTIFICADO</a>
-            </td>
+               <a class="btn btn-outline-success" asp-action="" asp-route-id="">PAGADO</a>
+            </td>               
             <td>
                <a asp-action="Edit" asp-route-id="@item.Id"><img src="/Images/editar.png" width="40px" heigh="40px"></a>
                <a asp-action="Delete" asp-route-id="@item.Id"><img src="/Images/eliminar.png" width="40px" heigh="40px"></a>
