@@ -82,10 +82,10 @@ public class HomeController : Controller
 <body>
 <br>
 <h1>Se le otorga el presente certificado a:</h1><br>
-<h1><strong>Nombre del Usuario<strong></h1><br>
+<h1><strong>Brandon Rodriguez Rocha<strong></h1><br>
 <h1>Por haber participado en el Taller de </h1><br>
-<h1><strong>Evento</strong></h1><br>
-<h1>Realizado los días --- de manera presencial. Municipalidad de la Molina, Lima - Perú.</h1><br>
+<h1><strong>Natacion</strong></h1><br>
+<h1>Realizado en turno noche de manera presencial. Municipalidad de la Molina, Lima - Perú.</h1><br>
 </body>
      "; 
      
