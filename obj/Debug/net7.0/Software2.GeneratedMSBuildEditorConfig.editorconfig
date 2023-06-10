@@ -9,153 +9,153 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Software2
 build_property.RootNamespace = Software2
-build_property.ProjectDir = D:\MICHELLE\2023\GeneradorCertificados\
+build_property.ProjectDir = d:\MICHELLE\2023\GeneradorCertificados\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\MICHELLE\2023\GeneradorCertificados
+build_property.MSBuildProjectDirectory = d:\MICHELLE\2023\GeneradorCertificados
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Areas/Identity/Pages/Account/Login.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Areas/Identity/Pages/Account/Register.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Areas/Identity/Pages/_ViewImports.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Areas/Identity/Pages/_ViewStart.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Admin/Panel.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Admin/Panel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGFuZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Certificado/CrearFirma.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Certificado/CrearFirma.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cQ3JlYXJGaXJtYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Certificado/CrearLogo.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Certificado/CrearLogo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cQ3JlYXJMb2dvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Certificado/DeleteFirma.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Certificado/DeleteFirma.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cRGVsZXRlRmlybWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Certificado/DeleteLogo.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Certificado/DeleteLogo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cRGVsZXRlTG9nby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Certificado/EditFirma.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Certificado/EditFirma.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cRWRpdEZpcm1hLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Certificado/EditLogo.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Certificado/EditLogo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cRWRpdExvZ28uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Certificado/Firmas.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Certificado/Firmas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cRmlybWFzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Certificado/Index.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Certificado/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Certificado/Logos.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Certificado/Logos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cTG9nb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Eventos/Index.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Eventos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Home/Index.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Home/Listar.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Home/Listar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXN0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Home/PagoConfirmado.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Home/PagoConfirmado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYWdvQ29uZmlybWFkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Home/Privacy.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Home/VistaPago.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Home/VistaPago.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaXN0YVBhZ28uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Pago/Index.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Pago/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Shared/Error.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Shared/_Administrador.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Shared/_Administrador.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbmlzdHJhZG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Shared/_LoginPartial.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Shared/_MenuAdmin.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Shared/_MenuAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZW51QWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Shared/_Usuario.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Shared/_Usuario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc3VhcmlvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Shared/_ValidationScriptsPartial.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Vecinos/Create.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Vecinos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVjaW5vc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Vecinos/Delete.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Vecinos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVjaW5vc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Vecinos/Edit.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Vecinos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVjaW5vc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Vecinos/Index.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Vecinos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVjaW5vc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/_ViewImports.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/_ViewStart.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MICHELLE/2023/GeneradorCertificados/Views/Shared/_Layout.cshtml]
+[d:/MICHELLE/2023/GeneradorCertificados/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-11d5dxpse7

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I3SWYDs+4lqLloHh7rqaBVzx5o7uhgL2O96c9eNh6yFLYqphqK3hpnFSjjT1wa1jU/jUnraqJMd5SJirNbPmJw==",
+  "dgSpecHash": "ChUs3wHzbYJMA62dBBUel24zesvKaxTbm4fm4RdFKBBCGhF2mIrVkCEd3HmNzzaOiYg7rzIqG0OTym+5wca0jA==",
   "success": true,
-  "projectFilePath": "D:\\MICHELLE\\2023\\GeneradorCertificados\\Software2.csproj",
+  "projectFilePath": "d:\\MICHELLE\\2023\\GeneradorCertificados\\Software2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alejandro\\.nuget\\packages\\anglesharp\\0.9.9\\anglesharp.0.9.9.nupkg.sha512",
     "C:\\Users\\Alejandro\\.nuget\\packages\\awssdk.core\\3.7.105.16\\awssdk.core.3.7.105.16.nupkg.sha512",

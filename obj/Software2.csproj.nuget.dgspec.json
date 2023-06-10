@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MICHELLE\\2023\\GeneradorCertificados\\Software2.csproj": {}
+    "d:\\MICHELLE\\2023\\GeneradorCertificados\\Software2.csproj": {}
   },
   "projects": {
-    "D:\\MICHELLE\\2023\\GeneradorCertificados\\Software2.csproj": {
+    "d:\\MICHELLE\\2023\\GeneradorCertificados\\Software2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MICHELLE\\2023\\GeneradorCertificados\\Software2.csproj",
+        "projectUniqueName": "d:\\MICHELLE\\2023\\GeneradorCertificados\\Software2.csproj",
         "projectName": "Software2",
-        "projectPath": "D:\\MICHELLE\\2023\\GeneradorCertificados\\Software2.csproj",
+        "projectPath": "d:\\MICHELLE\\2023\\GeneradorCertificados\\Software2.csproj",
         "packagesPath": "C:\\Users\\Alejandro\\.nuget\\packages\\",
-        "outputPath": "D:\\MICHELLE\\2023\\GeneradorCertificados\\obj\\",
+        "outputPath": "d:\\MICHELLE\\2023\\GeneradorCertificados\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alejandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
