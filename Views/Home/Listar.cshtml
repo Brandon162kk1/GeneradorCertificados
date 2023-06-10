@@ -118,20 +118,17 @@
               <div id="carta" class="card mb-3">
                 <div class="card-body">
                   <center>
-<<<<<<< HEAD
                   <h1 class="card-title">Evento N° @count</h1>
                   <h4 class="card-title">@Html.DisplayFor(modelItem => item.Evento)</h4>
                   <p class="card-text">Alumno : @Html.DisplayFor(modelItem => item.Nombres)@Html.DisplayFor(modelItem => item.Apellidos)</p>
                   <div>
                     <a asp-action="DescargarPDF" asp-route-id="@item.Id" class="btn btn-danger">DESCARGAR PDF</a>
-=======
                   <h4 class="card-title">Evento: @Html.DisplayFor(modelItem => item.Evento)</h4>
                   <p class="card-text">@Html.DisplayFor(modelItem => item.Nombres)@Html.DisplayFor(modelItem => item.Apellidos)</p>
                   <p class="card-text">Correo: @Html.DisplayFor(modelItem => item.Correo)</p>
                   <p class="card-text">Estado: Pagado</p>
                   <div> <!--asp-route-id="@item.Id"-->
                     <a asp-action="DescargarPDF" asp-route-id="@item.Id" class="btn btn-info">DESCARGAR PDF</a>
->>>>>>> 4b355f1944d6839025eeab3cdf2924f810bb1ae7
                   </div>
                   </center>
                 </div>
