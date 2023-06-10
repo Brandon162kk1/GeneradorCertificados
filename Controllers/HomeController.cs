@@ -93,7 +93,7 @@ public class HomeController : Controller
      var footer = $@"
      
 <footer>
-        <p>Gracias!!!</p>
+        
 </footer>
    </html>
      
